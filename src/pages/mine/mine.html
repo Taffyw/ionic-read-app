@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>我的</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <h6 *ngIf="flag == false" class="center">未登录</h6>
+  <ion-card *ngIf="flag == true">
+    <ion-card-header>
+      我的信息
+    </ion-card-header>
+    <ion-list>
+      <button ion-item (click)="setData()">
+        <ion-icon name="contact" item-left></ion-icon>
+        {{uname}}
+      </button>
+      <button ion-item (click)="setData()">
+        <ion-icon name="call" item-left></ion-icon>
+        {{phone}}
+      </button>
+      <button ion-item (click)="setData()">
+        <ion-icon name="mail" item-left></ion-icon>
+        {{email}}
+      </button>
+    </ion-list>
+  </ion-card>
+  <div padding>
+  <button block (click)="logout()" ion-button color="primary">{{text}}</button>
+  </div>
+</ion-content>

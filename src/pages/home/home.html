@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>小说阅读</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openSearch()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="module-header">
+    <div class="module-header-l">
+      <h3 class="module-title">我的书架</h3>
+      <span class="module-title-desc">滑动删除</span>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+  <h6 *ngIf="flag" class="center">书架空空如也，赶快去添加书籍吧！</h6>
+  <ion-list>
+    <ion-item-sliding *ngFor="let list of FavList">
+      <ion-item>
+        <h2>{{list.book_name}}</h2>
+        <button ion-button outline item-right (click)="goFav($event,list)">立即阅读</button>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button (click)="deleteBook(list)">
+          <ion-icon name="trash"></ion-icon>
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <div class="module-header">
+    <div class="module-header-l">
+      <h3 class="module-title">为您推荐</h3>
+      <span class="module-title-desc">最新最热的小说</span>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+  <ion-list>
+      <ion-item *ngFor="let list of BookList">
+        <ion-thumbnail item-left>
+          <img src="{{list.cover}}" class="book-img">
+        </ion-thumbnail>
+        <h2>{{list.name}}</h2>
+        <p>{{list.introduction}}<br>{{list.author}}</p>
+        <button ion-button outline item-right (click)="openPage($event,list)">立即阅读</button>
+      </ion-item>
+  </ion-list>
+</ion-content>

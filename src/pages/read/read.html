@@ -1,0 +1,18 @@
+<ion-content #popoverContent padding>
+  <div class='more-btn'>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)" color="trans">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </div>
+  <div class='back-btn'>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="back($event)" color="trans">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </div>
+  <div #popoverText class="content" [innerHtml]="txt">
+  </div>
+</ion-content>

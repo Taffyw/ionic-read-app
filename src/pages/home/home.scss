@@ -1,0 +1,41 @@
+page-home {
+  .book-type{
+    font-size:12px;
+    margin-top: 5px;
+  }
+  .center{
+    text-align: center;
+  }
+  .book-img{
+    width: 60px!important;
+    height: 80px!important;
+  }
+  .module-header{
+    padding: 10px 1rem;
+    border-top: 1rem solid transparent;
+    .module-header-l{
+      float: left;
+      h3{
+        display: inline;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .module-title::before {
+        font-size: 13px;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 1rem;
+        height: 1em;
+        content: '';
+        vertical-align: -.22ex;
+        color: transparent;
+        border-left: 2px solid #ed424b;
+    }
+      .module-title-desc{
+        font-size: 12px;
+        margin-left: .5rem;
+        color: #969ba3;
+      }
+  }
+  }
+}

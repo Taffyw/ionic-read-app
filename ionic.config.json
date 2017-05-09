@@ -1,0 +1,7 @@
+{
+  "name": "ionic2-app-base",
+  "app_id": "f28c52f5",
+  "typescript": true,
+  "v2": true,
+  "type": "ionic-angular"
+}
