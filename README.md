@@ -10,7 +10,11 @@ Ionic Read App
 修改项目api地址为本地后台服务地址 
 在这之前需要运行express后台服务 
 [express-read-app](https://github.com/Taffyw/express-read-app)
-
+## preview
+![](http://www.feifei666.com/images/home.png)
+![](http://www.feifei666.com/images/login.png)
+![](http://www.feifei666.com/images/read.png)
+![](http://www.feifei666.com/images/cont.png)
 ```bash
 $ npm install -g ionic
 ```
