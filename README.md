@@ -1,13 +1,15 @@
 Ionic Read App
 =====================
 
-Ò»¸ö¼òµ¥µÄÔÄ¶ÁÀàappÊµÏÖÁË Ö÷ÒªÊµÏÖÁËÓÃ»§µÇÂ¼×¢²á ÊÕ²ØÊé¼® ²é¿´Êé¼® ÆÀ¼Û ÔÄ¶ÁµÈ¹¦ÄÜ
+ä¸€ä¸ªç®€å•çš„é˜…è¯»ç±»appå®ç°äº† ä¸»è¦å®ç°äº†ç”¨æˆ·ç™»å½•æ³¨å†Œ æ”¶è—ä¹¦ç± æŸ¥çœ‹ä¹¦ç± è¯„ä»· é˜…è¯»ç­‰åŠŸèƒ½
 
-## Ê¹ÓÃÕâ¸öÏîÄ¿
+## ä½¿ç”¨è¿™ä¸ªé¡¹ç›®
 
-°²×°×îĞÂ°æ±¾µÄ Ionic CLI:
-...src\providers\Constants.ts ĞŞ¸ÄÏîÄ¿apiµØÖ·Îª±¾µØºóÌ¨·şÎñµØÖ· 
-ÔÚÕâÖ®Ç°ĞèÒªÔËĞĞexpressºóÌ¨·şÎñ [express-read-app](https://github.com/Taffyw/express-read-app)
+å®‰è£…æœ€æ–°ç‰ˆæœ¬çš„ Ionic CLI:
+...src\providers\Constants.ts 
+ä¿®æ”¹é¡¹ç›®apiåœ°å€ä¸ºæœ¬åœ°åå°æœåŠ¡åœ°å€ 
+åœ¨è¿™ä¹‹å‰éœ€è¦è¿è¡Œexpressåå°æœåŠ¡ 
+[express-read-app](https://github.com/Taffyw/express-read-app)
 
 ```bash
 $ npm install -g ionic
